@@ -1,0 +1,91 @@
+.w{
+    position: relative;
+    animation: w 1s linear;
+    left: 0;
+}
+@keyframes w {
+    0%  {
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.e{
+    position: relative;
+    animation: e 1.2s linear;
+    right: 0;
+}
+@keyframes e {
+    0%  {
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+.l{
+    position: relative;
+    animation: l 1.4s linear;
+    left: 0;
+}
+@keyframes l {
+    0%  {
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.c{
+    position: relative;
+    animation: c 1.6s linear;
+    right: 0;
+}
+@keyframes c {
+    0%  {
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+.o{
+    position: relative;
+    animation: o 1.8s linear;
+    left: 0;
+}
+@keyframes o {
+    0%  {
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.m{
+    position: relative;
+    animation: m 2s linear;
+    right: 0;
+}
+@keyframes m {
+    0%  {
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+.ee{
+    position: relative;
+    animation: ee 2.2s linear;
+    left: 0;
+}
+@keyframes ee {
+    0%  {
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}

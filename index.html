@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/png/gaming.png" type="image/x-icon">
+  <title>Equality</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow:{
+            '7xl':'rgba(0, 0, 0, 0.08) 0px 4px 12px',
+          },
+         backgroundImage: {
+        'hero-pattern': "url('./assets/images/png/bg-img.jpg')",
+      }
+        }
+      }
+    };    
+  </script>
+</head>
+<body class="bg-hero-pattern bg-center bg-cover bg-no-repeat relative overflow-hidden min-h-screen max-w-[1920px] mx-auto">
+  <section>
+    <div class="flex items-center justify-center flex-col ">
+        <div class="border overflow-hidden rounded-3xl p-8 mt-14 hover:border-2 hover:border-gray-950 hover:shadow-2xl transition-all ease-linear duration-300">
+            <h1 class="text-center justify-center items-center uppercase text-5xl text-white"><span class="w">w</span> <span class="e">e</span> <span class="l">l</span> <span class="c">c</span> <span class="o">o</span> <span class="m">m</span> <span class="ee">e</span></h1>
+            <h2 class="text-center justify-center items-center uppercase text-3xl text-white pt-4">I Want to Ask you Something</h2>
+        </div>
+  <button id="playButton" onclick="playAudio()" class="text-white border-gray-400 rounded-3xl mt-7 w-32 h-12 border hover:shadow-7xl hover:border-2 hover:border-white transition-all ease-linear duration-300">Play</button>
+  <audio id="audioPlayer" controls class="hidden">
+    <source src="./assets/audio/Are all human beings truly equal(audio).ogg" type="audio/ogg">
+    <source src="./assets/audio/Are all human beings truly equal(audio).mp3" type="audio/mpeg">
+  </audio>
+  <div id="dropDown" class="hidden  mt-7">
+    <form>
+      <textarea class="w-96 h-52 border-dotted outline-none border-white border rounded-3xl p-6" name="text-area" id="" placeholder="Write here your thoughts"></textarea>
+      <button id="answer" required class="border-white border w-36 h-11 bg-transparent text-white flex items-center justify-center rounded-3xl mt-5">Submit</button>
+    </form>
+  </div>
+</div>     
+</section>
+  <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
