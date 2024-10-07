@@ -9,21 +9,25 @@ function playAudio() {
   document.getElementById("playButton").style.display = "none";
 }
 
+// Show the question after the welcome text animation
 document.addEventListener("DOMContentLoaded", (event) => {
-  
+  const welcomeText = document.getElementById("welcomeText");
+  const askText = document.getElementById("ask");
+
+  welcomeText.addEventListener("animationend", () => {
+    askText.classList.remove("hidden"); 
+  });
+
   const form = document.querySelector("form");
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const textAreaValue = form.querySelector("textarea").value;
 
- 
     if (textAreaValue.trim() !== "") {
-      alert(
-        "If you believe in Equality thats nice"
-      );
+      alert("If you believe in Equality that's nice");
     } else {
       alert("In the End of the Day Equality is Just a Fantasy in (my opinion)");
-    }; 
+    }
   });
 });

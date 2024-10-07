@@ -26,8 +26,11 @@
   <section>
     <div class="flex items-center justify-center flex-col ">
         <div class="border overflow-hidden rounded-3xl p-8 mt-14 hover:border-2 hover:border-gray-950 hover:shadow-2xl transition-all ease-linear duration-300">
-            <h1 class="text-center justify-center items-center uppercase text-5xl text-white"><span class="w">w</span> <span class="e">e</span> <span class="l">l</span> <span class="c">c</span> <span class="o">o</span> <span class="m">m</span> <span class="ee">e</span></h1>
-            <h2 class="text-center justify-center items-center uppercase text-3xl text-white pt-4">I Want to Ask you Something</h2>
+            <h1 id="welcomeText" class="text-center justify-center items-center uppercase text-5xl text-white animate-fade-in">
+  <span class="w">w</span> <span class="e">e</span> <span class="l">l</span> <span class="c">c</span> <span class="o">o</span> <span class="m">m</span> <span class="ee">e</span>
+</h1>
+<h2 id="ask" class="text-center justify-center items-center uppercase text-3xl text-white pt-4 hidden">I Want to Ask you Something</h2>
+
         </div>
   <button id="playButton" onclick="playAudio()" class="text-white border-gray-400 rounded-3xl mt-7 w-32 h-12 border hover:shadow-7xl hover:border-2 hover:border-white transition-all ease-linear duration-300">Play</button>
   <audio id="audioPlayer" controls class="hidden">
